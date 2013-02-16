@@ -37,6 +37,7 @@ namespace MvcApplication2.Controllers
         //
         // GET: /Book/Create
 
+        [Authorize]
         public ActionResult Create()
         {
             return View();
@@ -46,6 +47,7 @@ namespace MvcApplication2.Controllers
         // POST: /Book/Create
 
         [HttpPost]
+        [Authorize]
         public ActionResult Create(Book book)
         {
             if (ModelState.IsValid)
@@ -61,6 +63,7 @@ namespace MvcApplication2.Controllers
         //
         // GET: /Book/Edit/5
 
+        [Authorize]
         public ActionResult Edit(int id = 0)
         {
             Book book = db.Books.Single(b => b.Id == id);
@@ -75,6 +78,7 @@ namespace MvcApplication2.Controllers
         // POST: /Book/Edit/5
 
         [HttpPost]
+        [Authorize]
         public ActionResult Edit(Book book)
         {
             if (ModelState.IsValid)
@@ -90,6 +94,7 @@ namespace MvcApplication2.Controllers
         //
         // GET: /Book/Delete/5
 
+        [Authorize]
         public ActionResult Delete(int id = 0)
         {
             Book book = db.Books.Single(b => b.Id == id);
@@ -104,6 +109,7 @@ namespace MvcApplication2.Controllers
         // POST: /Book/Delete/5
 
         [HttpPost, ActionName("Delete")]
+        [Authorize]
         public ActionResult DeleteConfirmed(int id)
         {
             Book book = db.Books.Single(b => b.Id == id);
