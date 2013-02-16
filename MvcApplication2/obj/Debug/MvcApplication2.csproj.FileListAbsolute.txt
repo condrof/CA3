@@ -48,6 +48,6 @@ c:\users\fergal\documents\visual studio 2010\Projects\MvcApplication2\MvcApplica
 c:\users\fergal\documents\visual studio 2010\Projects\MvcApplication2\MvcApplication2\bin\DotNetOpenAuth.OAuth.xml
 c:\users\fergal\documents\visual studio 2010\Projects\MvcApplication2\MvcApplication2\bin\DotNetOpenAuth.OpenId.xml
 c:\users\fergal\documents\visual studio 2010\Projects\MvcApplication2\MvcApplication2\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
-c:\users\fergal\documents\visual studio 2010\Projects\MvcApplication2\MvcApplication2\obj\Debug\MvcApplication2.csprojResolveAssemblyReference.cache
 c:\users\fergal\documents\visual studio 2010\Projects\MvcApplication2\MvcApplication2\obj\Debug\MvcApplication2.dll
 c:\users\fergal\documents\visual studio 2010\Projects\MvcApplication2\MvcApplication2\obj\Debug\MvcApplication2.pdb
+C:\Users\Fergal\documents\visual studio 2010\Projects\MvcApplication2\MvcApplication2\obj\Debug\MvcApplication2.csprojResolveAssemblyReference.cache

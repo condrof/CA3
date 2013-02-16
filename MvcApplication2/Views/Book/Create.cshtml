@@ -1,0 +1,69 @@
+﻿@model MvcApplication2.Models.Book
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm(null, null, FormMethod.Get, new { name = "bookForm", id = "bookForm" }) ) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Book</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Paperback)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Paperback)
+            @Html.ValidationMessageFor(model => model.Paperback)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Pages)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Pages)
+            @Html.ValidationMessageFor(model => model.Pages)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Price)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Price)
+            @Html.ValidationMessageFor(model => model.Price)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+<script type="text/javascript">
+    $("#bookForm").validate({
+        rules: {
+            Pages: "required",
+            Price: "required"
+        },
+        messages: {
+            Pages: "You must enter a valid number",
+            Price: "You must enter a valid price"
+        },
+        submitHandler: function (form) {
+            form.submit();
+        }
+    })
+
+</script>
